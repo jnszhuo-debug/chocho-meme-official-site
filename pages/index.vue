@@ -18,10 +18,12 @@
         </div>
       </div>
 
-      <!-- Hero Mascot -->
-      <div class="hero-mascot">
-        <NeonPoodle />
-      </div>
+      <!-- Hero Mascot (ClientOnly to avoid SVG filter ID hydration mismatch) -->
+      <ClientOnly>
+        <div class="hero-mascot">
+          <NeonPoodle />
+        </div>
+      </ClientOnly>
 
       <!-- Background glows -->
       <div class="hero-bg">
