@@ -1,6 +1,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [],
+  nitro: {
+    preset: 'static',
+  },
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
